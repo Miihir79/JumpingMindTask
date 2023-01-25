@@ -78,4 +78,5 @@ All contributions are welcomed, Properly describe changes made and attach suppor
 
 ## Author
 Initial work: <a href="https://github.com/Miihir79">***Mihir Shah***</a> <br>
-This project was created as an interview process assignment.
+This project was created as an interview process assignment. <br>
+Obtained the beer icon from <a href="https://www.uplabs.com/posts/beer-app-icon">here</a> and the due credit goes to the creator.
