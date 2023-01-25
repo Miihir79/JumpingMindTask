@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+        name="beerItem"
+        type="com.mihir.jumpingmindtask.model.BeerDataItem"
+            />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgVbeer"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_150sdp"
+            loadImg="@{beerItem.image_url}"
+            android:transitionName="img_small"
+            android:contentDescription="@string/beer_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{beerItem.name}"
+            tools:text="Buzz"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:transitionName="title_small"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:fontFamily="@font/roboto"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgVbeer" />
+
+        <TextView
+            android:id="@+id/textViewDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:transitionName="desc_small"
+            android:layout_marginHorizontal="@dimen/_4sdp"
+            android:fontFamily="@font/roboto"
+            android:text="@{beerItem.description}"
+            android:textColor="@color/black"
+            tools:text="Lightly crisp and bitter IPA brewed with English and American hops"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/beerList">
+
+    <fragment
+        android:id="@+id/beerList"
+        android:name="com.mihir.jumpingmindtask.ui.screen.BeerList"
+        android:label="fragment_beer_list"
+        tools:layout="@layout/fragment_beer_list" >
+        <action
+            android:id="@+id/action_beerList_to_beerDetails"
+            app:destination="@id/beerDetails"
+            app:enterAnim="@anim/poping_anim"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/poping_anim" />
+        <action
+            android:id="@+id/action_beerList_to_favBeer"
+            app:destination="@id/favBeer"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/beerDetails"
+        android:name="com.mihir.jumpingmindtask.ui.screen.BeerDetails"
+        android:label="BeerDetails" />
+    <fragment
+        android:id="@+id/favBeer"
+        android:name="com.mihir.jumpingmindtask.ui.screen.FavBeer"
+        android:label="fragment_fav_beer"
+        tools:layout="@layout/fragment_fav_beer" >
+        <action
+            android:id="@+id/action_favBeer_to_beerDetails"
+            app:destination="@id/beerDetails"
+            app:enterAnim="@anim/poping_anim"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/poping_anim"  />
+    </fragment>
+</navigation>
