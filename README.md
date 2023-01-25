@@ -20,6 +20,18 @@ This app was build on top of api provided by <a href="https://punkapi.com/">Punk
   <tr>
 </table>
 
+
+### Salient features of the app
+
+  - Api request Paged using Paging library
+  - User made accustomed to the app using prompts
+  - Liked Beers stored in local RoomDB
+  - Implemented Databinding
+  - Animations and transitions
+  - Shimmer effect for loading images
+  - R8 optimization
+  
+  
 ### Demo
 
 https://user-images.githubusercontent.com/66465511/214589829-b3a2e05f-f4cc-40c3-869a-dc88fbed31b4.mp4
@@ -28,14 +40,15 @@ https://user-images.githubusercontent.com/66465511/214589829-b3a2e05f-f4cc-40c3-
 
 ### Libraries used
   - Gson 
-  - intuit sdp & ssp
+  - Intuit sdp & ssp
   - Retrofit
   - shredpreferences
-  - room
-  - paging
-  - shimmerview
+  - Glide
+  - Room
+  - Paging
+  - Shimmerview
   - material tap target prompt
-  - splashscreen API
+  - Splashscreen API
   
 ### ***Download the app from here👇***
   
