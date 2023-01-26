@@ -1,3 +1,6 @@
+![Cover (1)](https://user-images.githubusercontent.com/66465511/214823831-78ba60c4-f25d-4bd5-b8d9-60c1a113c833.png)
+
+
 # JumpingMindTask
 
 <p>
