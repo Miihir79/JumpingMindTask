@@ -46,7 +46,7 @@ https://user-images.githubusercontent.com/66465511/214589829-b3a2e05f-f4cc-40c3-
   - Intuit sdp & ssp
   - Retrofit
   - shredpreferences
-  - Glide
+  - Coil
   - Room
   - Paging
   - Shimmerview
