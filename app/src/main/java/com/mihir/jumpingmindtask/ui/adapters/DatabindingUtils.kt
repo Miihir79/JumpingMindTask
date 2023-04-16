@@ -3,7 +3,7 @@ package com.mihir.jumpingmindtask.ui.adapters
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.BindingAdapter
-import com.bumptech.glide.Glide
+import coil.load
 import com.facebook.shimmer.Shimmer
 import com.facebook.shimmer.ShimmerDrawable
 
@@ -21,10 +21,10 @@ fun ImageView.loadImg(url:String){
     val shimmerDrawable = ShimmerDrawable().apply {
         setShimmer(shimmer)
     }
-    Glide.with(this)
-        .load(url)
-        .placeholder(shimmerDrawable)
-        .into(this)
+    this.load(url) {
+        placeholder(shimmerDrawable)
+    }
+
 }
 
 @BindingAdapter("setFirstDateText")
