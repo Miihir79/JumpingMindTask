@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.flow
 class ViewModel(application: Application): AndroidViewModel(application) {
 
     val beerData = flow {
-            emitAll(AppObjectController.getBeerData().cachedIn(viewModelScope))
+        emitAll(AppObjectController.getBeerData().cachedIn(viewModelScope))
     }
 
 }

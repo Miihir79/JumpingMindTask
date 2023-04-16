@@ -1,6 +1,5 @@
 package com.mihir.jumpingmindtask.network
 
-import android.app.Application
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.google.gson.FieldNamingPolicy
@@ -12,7 +11,6 @@ import com.mihir.jumpingmindtask.model.BeerDataItem
 import kotlinx.coroutines.flow.Flow
 import retrofit2.Retrofit
 import androidx.paging.Pager
-import androidx.preference.PreferenceManager
 import com.mihir.jumpingmindtask.ui.adapters.BeerPagingSource
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -27,7 +25,7 @@ class AppObjectController {
                 .build()
         }
 
-        val service: NetworkService by lazy { retrofit.create(NetworkService::class.java) }
+        private val service: NetworkService by lazy { retrofit.create(NetworkService::class.java) }
 
         fun getBeerData(): Flow<PagingData<BeerDataItem>> {
             val pagingSource =
